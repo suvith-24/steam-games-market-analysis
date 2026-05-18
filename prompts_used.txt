@@ -1,0 +1,11 @@
+1) I’m trying to scrape games from Steam using BeautifulSoup, but some fields like price and discount are missing for certain games. How can I handle these cases properly?
+
+2) I have scraped price data as strings like “5.7 $ ” or “Free to Play”. How can I clean and convert this into usable numeric format using pandas?
+
+3) I’m storing scraped data in MongoDB Atlas. How can I avoid duplicate entries and update existing records?
+
+4) Is this a good project structure for a scraping + data analysis pipeline? How can I better organize scraper, analysis, and database modules?
+
+5)I created some basic matplotlib and seaborn charts for price distribution, make them more professional and readable?
+
+6) My scraping script is slow when processing multiple pages. What are some ways to optimize or speed it up in Python?

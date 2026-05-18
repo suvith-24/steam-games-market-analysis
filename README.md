@@ -87,7 +87,7 @@ steam-games-market-analysis/
 ## 1. Clone the Repository
 
 ```powershell
-cd "c:\Users\Suvith Shetty\OneDrive\Desktop\SRH\SEMESTER 2\Data Management 2"
+cd <to the folder where you want to store the project>
 
 git clone <your-github-repo-url>
 
@@ -122,29 +122,13 @@ python -m pip install -r requirements.txt
 
 1. Create a MongoDB Atlas account.
 2. Create a new cluster.
-3. Free tier is sufficient.
+3. Select Free tier.
 
 ---
 
-## 2. Configure Network Access
-
-Add your current IP address in:
-
-```text
-Security → Network Access
-```
-
-You can temporarily allow:
-
-```text
-0.0.0.0/0
-```
-
-for development.
-
 ---
 
-## 3. Create Database User
+## 2. Create Database User
 
 Create a MongoDB user with:
 
@@ -156,7 +140,7 @@ permissions.
 
 ---
 
-## 4. Configure Environment Variables
+## 3. Configure Environment Variables
 
 Create:
 
@@ -164,7 +148,7 @@ Create:
 .env
 ```
 
-inside the project root.
+inside the project root (You can copy thee .env.example file and do changes accordingly).
 
 Example:
 
@@ -318,46 +302,7 @@ python -m pip install -r requirements.txt
 
 ---
 
-# GitHub Push Instructions
 
-## First Push
-
-```powershell
-git init
-
-git add .
-
-git commit -m "Initial commit"
-
-git branch -M main
-
-git remote add origin <your-github-url>
-
-git push -u origin main
-```
-
----
-
-## Future Pushes
-
-```powershell
-git add .
-
-git commit -m "Updated project"
-
-git push
-```
-
----
-
-# Important Notes
-
-- `.env` should NEVER be pushed to GitHub.
-- MongoDB Atlas is the main datasource.
-- CSV is only a fallback backup.
-- Scraping occurs only with `--refresh`.
-
----
 
 # File Responsibilities
 
@@ -405,5 +350,3 @@ No scraping required.
 # Author
 
 Suvith Shetty
-
-Data Engineering / Data Analytics / AI & ML
